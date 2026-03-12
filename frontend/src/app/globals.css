@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #fffbf5;
+  --foreground: #1a1a1a;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: "Noto Serif SC", "Source Han Serif SC", Georgia, "Times New Roman", serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 滚动条美化 */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #e5c9a0;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #d4a574;
+}
+
+/* 动画 */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-in {
+  animation: fadeIn 0.4s ease-out;
+}
+
+.animate-slide-up {
+  animation: slideUp 0.5s ease-out;
+}
+
+/* 故事文本排版 */
+.story-text {
+  text-align: justify;
+  text-indent: 2em;
+  line-height: 2;
+}
+
+/* 图片加载占位 */
+.img-placeholder {
+  background: linear-gradient(135deg, #fef3c7 0%, #fde68a 50%, #fef3c7 100%);
+  background-size: 200% 200%;
+  animation: shimmer 2s ease-in-out infinite;
+}
+
+@keyframes shimmer {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}

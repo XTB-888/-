@@ -1,0 +1,28 @@
+# FastAPI & Server
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+python-multipart==0.0.20
+python-dotenv==1.0.1
+
+# LangChain & LangGraph
+langchain==0.3.14
+langchain-openai==0.3.0
+langchain-community==0.3.14
+langgraph==0.2.60
+
+# Vector Store
+chromadb==0.5.23
+
+# Image Processing
+Pillow==11.1.0
+
+# HTTP Client
+httpx==0.28.1
+aiohttp==3.11.11
+
+# Pydantic
+pydantic==2.10.4
+pydantic-settings==2.7.1
+
+# Utilities
+tenacity==9.0.0

@@ -1,0 +1,50 @@
+[
+  {
+    "test_id": "治愈_1",
+    "style": "治愈",
+    "overall_score": 90.0,
+    "vision_score": 100.0,
+    "story_score": 100.0,
+    "image_score": 100.0,
+    "performance_score": 60,
+    "total_time": 60.21,
+    "story_length": 528,
+    "image_count": 4,
+    "pipeline_status": "completed",
+    "has_personification": true,
+    "has_moral": true,
+    "emotion_arc_clear": true
+  },
+  {
+    "test_id": "冒险_1",
+    "style": "冒险",
+    "overall_score": 90.0,
+    "vision_score": 100.0,
+    "story_score": 100.0,
+    "image_score": 100.0,
+    "performance_score": 60,
+    "total_time": 64.62,
+    "story_length": 565,
+    "image_count": 4,
+    "pipeline_status": "completed",
+    "has_personification": true,
+    "has_moral": true,
+    "emotion_arc_clear": true
+  },
+  {
+    "test_id": "暗黑_1",
+    "style": "暗黑",
+    "overall_score": 85.0,
+    "vision_score": 100.0,
+    "story_score": 100.0,
+    "image_score": 75.0,
+    "performance_score": 60,
+    "total_time": 88.15,
+    "story_length": 588,
+    "image_count": 3,
+    "pipeline_status": "completed_with_issues",
+    "has_personification": true,
+    "has_moral": true,
+    "emotion_arc_clear": true
+  }
+]

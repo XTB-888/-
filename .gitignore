@@ -1,0 +1,34 @@
+# Dependencies
+node_modules/
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Environment
+.env
+.env.local
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build
+.next/
+out/
+dist/
+build/
+
+# Data (keep structure, ignore content)
+backend/uploads/*
+!backend/uploads/.gitkeep
+backend/outputs/*
+!backend/outputs/.gitkeep
+backend/data/chroma_db/
+
+# Logs
+*.log
