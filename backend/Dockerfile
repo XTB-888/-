@@ -12,8 +12,9 @@ COPY . .
 # 创建必要目录
 RUN mkdir -p uploads outputs data/chroma_db
 
-# 暴露端口
-EXPOSE 8000
+# Railway 使用 PORT 环境变量
+ENV PORT=8000
+EXPOSE ${PORT}
 
-# 启动
-CMD ["python", "-m", "uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
+# 启动 - 使用 shell 形式以支持环境变量替换
+CMD uvicorn main:app --host 0.0.0.0 --port ${PORT}
