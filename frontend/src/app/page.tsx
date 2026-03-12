@@ -6,7 +6,6 @@ import axios from "axios";
 const API_BASE = process.env.NEXT_PUBLIC_API_BASE || "http://localhost:8000";
 
 type StoryStyle = "治愈" | "冒险" | "暗黑";
-type ViewMode = "split" | "book";
 
 interface VisionAnalysis {
   item_name: string;
