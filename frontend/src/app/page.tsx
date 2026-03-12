@@ -3,7 +3,7 @@
 import { useState, useRef, useEffect, useCallback } from "react";
 import axios from "axios";
 
-const API_BASE = "http://localhost:8000";
+const API_BASE = process.env.NEXT_PUBLIC_API_BASE || "http://localhost:8000";
 
 type StoryStyle = "治愈" | "冒险" | "暗黑";
 type ViewMode = "split" | "book";
