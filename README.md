@@ -134,8 +134,8 @@ fablelens/
 ### 1. 克隆仓库
 
 ```bash
-git clone https://github.com/XTB-888/-.git
-cd -
+git clone https://github.com/XTB-888/FableLens.git
+cd FableLens
 ```
 
 ### 2. 获取 API Key
@@ -286,7 +286,7 @@ curl -X POST http://localhost:8000/api/generate \
 |------|------|------|
 | **前端** | Vercel | https://fablelens.vercel.app |
 | **后端 API** | Railway | https://fablens-production.up.railway.app |
-| **源码** | GitHub | https://github.com/XTB-888/- |
+| **源码** | GitHub | https://github.com/XTB-888/FableLens |
 
 ---
 
