@@ -9,12 +9,24 @@
 </p>
 
 <p align="center">
+  <a href="https://fablelens.vercel.app"><img src="https://img.shields.io/badge/🌐_在线体验-fablelens.vercel.app-orange?style=for-the-badge" /></a>
+</p>
+
+<p align="center">
   <img src="https://img.shields.io/badge/Python-3.11+-blue?logo=python" />
   <img src="https://img.shields.io/badge/Next.js-14-black?logo=next.js" />
   <img src="https://img.shields.io/badge/LangGraph-0.2-green?logo=langchain" />
   <img src="https://img.shields.io/badge/FastAPI-0.115-teal?logo=fastapi" />
   <img src="https://img.shields.io/badge/评测评级-A_优秀_(88.3分)-brightgreen" />
 </p>
+
+---
+
+## 在线体验
+
+**👉 [https://fablelens.vercel.app](https://fablelens.vercel.app)**
+
+上传任意物品照片，选择风格，约 60 秒即可获得一篇完整的寓言故事和 4 张水彩绘本插图。
 
 ---
 
@@ -168,7 +180,8 @@ npm run dev
 
 ### 6. 访问
 
-- **前端**: http://localhost:3000
+- **在线体验**: https://fablelens.vercel.app
+- **本地前端**: http://localhost:3000
 - **API 文档**: http://localhost:8000/docs
 - **健康检查**: http://localhost:8000/health
 
@@ -263,7 +276,17 @@ curl -X POST http://localhost:8000/api/generate \
 | 7-8 | LangGraph | 6 节点 DAG + 重试 + 质量自检 |
 | 9-10 | 前端优化 | 绘本模式 + 拖拽 + 进度条 |
 | 11-12 | 评测优化 | 4 维度评测 + Prompt v2 + 限流重试 |
-| 13-14 | 部署上线 | GitHub + 文档 |
+| 13-14 | 部署上线 | [Vercel](https://fablelens.vercel.app) + [Railway](https://fablens-production.up.railway.app/health) |
+
+---
+
+## 部署架构
+
+| 服务 | 平台 | 地址 |
+|------|------|------|
+| **前端** | Vercel | https://fablelens.vercel.app |
+| **后端 API** | Railway | https://fablens-production.up.railway.app |
+| **源码** | GitHub | https://github.com/XTB-888/- |
 
 ---
 
