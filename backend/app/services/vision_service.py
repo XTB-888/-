@@ -24,6 +24,20 @@ class VisionService:
         )
 
     @staticmethod
+    def get_mime_type(image_path: str) -> str:
+        """根据文件扩展名返回 MIME 类型"""
+        ext = Path(image_path).suffix.lower()
+        mime_map = {
+            ".jpg": "image/jpeg",
+            ".jpeg": "image/jpeg",
+            ".png": "image/png",
+            ".webp": "image/webp",
+            ".gif": "image/gif",
+            ".bmp": "image/bmp",
+        }
+        return mime_map.get(ext, "image/jpeg")
+
+    @staticmethod
     def encode_image(image_path: str) -> str:
         """将图片文件转为 base64"""
         with open(image_path, "rb") as f:
@@ -76,9 +90,10 @@ class VisionService:
         """
         # 1. 编码图片
         image_base64 = self.encode_image(image_path)
+        mime_type = self.get_mime_type(image_path)
 
         # 2. 构建消息
-        messages = build_vision_messages(image_base64)
+        messages = build_vision_messages(image_base64, mime_type)
 
         # 3. 调用 VLM
         response = self.client.invoke(messages)

@@ -396,14 +396,14 @@ export default function Home() {
                   <div className="space-y-2">
                     <div className="text-3xl">📷</div>
                     <p className="text-sm text-amber-700">点击或拖拽上传</p>
-                    <p className="text-xs text-amber-400">JPG / PNG</p>
+                    <p className="text-xs text-amber-400">JPG / PNG / WebP</p>
                   </div>
                 )}
               </div>
               <input
                 ref={fileInputRef}
                 type="file"
-                accept="image/*"
+                accept="image/jpeg,image/png,image/webp"
                 className="hidden"
                 onChange={handleFileChange}
               />

@@ -21,7 +21,7 @@ VISION_ANALYSIS_PROMPT = """你是一位富有想象力的视觉分析师，擅�
 """
 
 
-def build_vision_messages(image_base64: str) -> list[dict]:
+def build_vision_messages(image_base64: str, mime_type: str = "image/jpeg") -> list[dict]:
     """构建 VLM 请求的消息格式（OpenAI 兼容）"""
     return [
         {
@@ -30,7 +30,7 @@ def build_vision_messages(image_base64: str) -> list[dict]:
                 {
                     "type": "image_url",
                     "image_url": {
-                        "url": f"data:image/jpeg;base64,{image_base64}"
+                        "url": f"data:{mime_type};base64,{image_base64}"
                     }
                 },
                 {
